@@ -1,0 +1,12 @@
+﻿@model CustomError
+@{
+    ViewData["Title"] = @Model.Titulo;
+}
+
+<div class="container">
+    <div style="padding-top: 200px; text-align: center">
+        @{
+            <h5>@Model.Titulo - @Model.Mensagem</h5>
+        }
+    </div>
+</div>
