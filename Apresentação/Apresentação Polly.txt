@@ -27,3 +27,17 @@ POST
 	"descricao": "produto 4",
 	"valor": 44.78
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SLIDES
+
+Tornando sua aplicação resiliente com Polly
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+referencias
+https://www.dicio.com.br/resiliencia/
+https://github.com/App-vNext/Polly
+https://github.com/App-vNext/Polly/wiki
+https://www.youtube.com/watch?v=FSINhKEMwNQ
+https://www.youtube.com/watch?v=vqCli4em2n0
+https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly
