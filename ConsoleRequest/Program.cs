@@ -9,6 +9,9 @@ namespace ConsoleRequest
 {
     class Program
     {
+        protected Program()
+        { }
+
         private static IConfiguration _configuration;
 
         static void Main(string[] args)
