@@ -19,13 +19,9 @@ namespace WebPollyExample
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services
-                .AddHttpClient<WaitAndRetryApiClient>()
-                .AddPolicyHandler(PollyExtensions.PollyWaitAndRetry());
-
-            services
-                .AddHttpClient<CircuitBreakerApiClient>()
-                .AddPolicyHandler(PollyExtensions.PollyCircuitBreaker());
+            services.AddHttpClient<ProdutoApiClient>();
+            services.AddHttpClient<WaitAndRetryApiClient>().AddPolicyHandler(PollyExtensions.PollyWaitAndRetry());
+            services.AddHttpClient<CircuitBreakerApiClient>().AddPolicyHandler(PollyExtensions.PollyCircuitBreaker());
 
             services.AddControllersWithViews();
         }

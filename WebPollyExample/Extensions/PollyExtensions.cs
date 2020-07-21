@@ -45,7 +45,7 @@ namespace WebPollyExample.Extensions
                     onReset: () =>
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
-                        Console.WriteLine("Circuito fechando - OnReset");
+                        Console.WriteLine("Circuito meio aberto - OnReset");
                         Console.ResetColor();
                     });
     }
