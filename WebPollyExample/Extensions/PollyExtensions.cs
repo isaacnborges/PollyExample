@@ -20,7 +20,7 @@ namespace WebPollyExample.Extensions
                     {
                         Console.BackgroundColor = ConsoleColor.White;
                         Console.ForegroundColor = ConsoleColor.DarkBlue;
-                        Console.WriteLine($"Tentando pela {retryAttempt} vez");
+                        Console.WriteLine($"Tentando pela {retryAttempt}ª vez");
                         Console.ResetColor();
                     }
                 );

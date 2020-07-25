@@ -54,7 +54,7 @@ namespace WebApi.Controllers
             return NotFound();
         }
 
-        [HttpDelete, Route("{id}")]
+        [HttpDelete("{id}")]
         public IActionResult Delete([FromRoute] Guid id)
         {
             var produto = _produtos.FirstOrDefault(x => x.Id == id);
@@ -67,7 +67,7 @@ namespace WebApi.Controllers
                 return NotFound();
         }
 
-        [HttpGet, Route("{id}")]
+        [HttpGet("{id}")]
         public IActionResult Get([FromRoute] Guid id)
         {
             var produto = _produtos.FirstOrDefault(x => x.Id == id);
