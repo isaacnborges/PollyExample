@@ -17,4 +17,4 @@ ASP.NET MVC project using the Polly library with WaitAndRetry and CircuitBreaker
 <img src="https://github.com/isaacnborges/PollyExample/blob/master/Apresentacao/images/WebPollyExample.jpg?raw=true"/>
 
 #### ConsoleRequest
-Console Application project using the Polly library with CircuitBreaker policies with Fallback
+Console Application project using the Polly library with CircuitBreaker and Fallback policies
