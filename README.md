@@ -10,9 +10,11 @@
 
 #### WebApi
 Simple API project providing a fake CRUD in memory
+<img src="https://raw.githubusercontent.com/isaacnborges/PollyExample/master/Apresentacao/images/webApiExample.jpg"/>
 
 #### WebPollyExample
 ASP.NET MVC project using the Polly library with WaitAndRetry and CircuitBreaker policies
+<img src="https://github.com/isaacnborges/PollyExample/blob/master/Apresentacao/images/WebPollyExample.jpg?raw=true"/>
 
 #### ConsoleRequest
 Console Application project using the Polly library with CircuitBreaker policies with Fallback
