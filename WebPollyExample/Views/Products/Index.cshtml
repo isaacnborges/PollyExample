@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+
+@{
+    if (Model.Any())
+    {
+        <br>
+        <br>
+        <div class="table-responsive-sm">
+            <table class="table table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (var product in Model)
+                        {
+                            <tr>
+                                <td>@product.Code</td>
+                                <td>@product.Description</td>
+                                <td>@product.Price</td>
+                            </tr>
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p>No product</p>
+    }
+}

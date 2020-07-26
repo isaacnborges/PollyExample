@@ -1,7 +1,7 @@
-﻿@model IEnumerable<Produto>
+﻿@model IEnumerable<Product>
 
 @{
-    ViewData["Title"] = "Wait and Retry";
+    ViewData["Title"] = "Circuit Breaker";
 }
 
 
@@ -14,19 +14,19 @@
             <table class="table table-bordered">
                 <thead class="thead-light">
                     <tr>
-                        <th scope="col">Codigo</th>
-                        <th scope="col">Descricao</th>
-                        <th scope="col">Valor</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     @{
-                        foreach (var produto in Model)
+                        foreach (var product in Model)
                         {
                             <tr>
-                                <td>@produto.Codigo</td>
-                                <td>@produto.Descricao</td>
-                                <td>@produto.Valor</td>
+                                <td>@product.Code</td>
+                                <td>@product.Description</td>
+                                <td>@product.Price</td>
                             </tr>
                         }
                     }
@@ -37,6 +37,6 @@
     }
     else
     {
-        <p>Nenhum produto</p>
+        <p>No product</p>
     }
 }

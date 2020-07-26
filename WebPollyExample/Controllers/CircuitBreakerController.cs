@@ -12,8 +12,8 @@ namespace WebPollyExample.Controllers
         public async Task<IActionResult> Index([FromServices] CircuitBreakerApiClient client)
         {
             var response = await client.SendRequest();
-            var produtos = JsonConvert.DeserializeObject<List<Produto>>(response);
-            return View(produtos);
+            var products = JsonConvert.DeserializeObject<List<Product>>(response);
+            return View(products);
         }
     }
 }
