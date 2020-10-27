@@ -20,6 +20,7 @@ namespace WebPollyExample.Extensions
                     {
                         Console.BackgroundColor = ConsoleColor.White;
                         Console.ForegroundColor = ConsoleColor.DarkBlue;
+                        Console.WriteLine($"Aguardando {timeSpan}");
                         Console.WriteLine($"Tentando pela {retryAttempt}ª vez");
                         Console.ResetColor();
                     }
@@ -30,7 +31,7 @@ namespace WebPollyExample.Extensions
                 .HandleTransientHttpError()
                 .CircuitBreakerAsync(
                     handledEventsAllowedBeforeBreaking: _retryCount,
-                    durationOfBreak: TimeSpan.FromSeconds(20),
+                    durationOfBreak: TimeSpan.FromSeconds(30),
                     onBreak: (result, timeSpan) =>
                     {
                         var msg = 
